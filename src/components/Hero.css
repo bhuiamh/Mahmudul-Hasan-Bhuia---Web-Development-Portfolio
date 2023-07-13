@@ -1,0 +1,22 @@
+.ImgContainer {
+    position: relative;
+  }
+  
+  .rotating-image {
+    position: absolute;
+    top: 1%;
+    left: 31.5%;
+    transform: translate(-50%, -50%);
+    animation: rotate 10s linear infinite; /* Adjust the animation duration and timing as needed */
+  }
+  
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../style";
-import { ComputersCanvas } from "./canvas";
+import "./Hero.css";
 
+// import { ComputersCanvas } from "./canvas";
+// import profilePhoto from "./desktop_pc/profile.jpg";
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -24,7 +26,19 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
+      <div className="ImgContainer absolute inset-0 top-[280px] mx-auto">
+        <img
+          className="relative max-w-[150px] md:max-w-[300px] mx-auto"
+          src="https://drive.google.com/uc?export=view&id=19Cqm9Yxwao6ot-HtMgAacwEsHq0EVXoj"
+          alt="Profile Picture"
+        />
+        <img
+          src="https://drive.google.com/uc?export=download&id=1bY2ixpxXPrnB4DWznWRZDDDpQjeIoTy1"
+          alt="Circle"
+          className="rotating-image max-w-[200px] md:max-w-[500px]"
+        />
+      </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

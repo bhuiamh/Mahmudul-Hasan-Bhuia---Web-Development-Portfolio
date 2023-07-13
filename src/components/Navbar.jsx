@@ -49,6 +49,13 @@ const Navbar = () => {
           </p>
         </Link>
 
+        <a
+          href="https://drive.google.com/uc?export=download&id=17WqOY0tQL7CQb-oFc_tr_18T7_6ks81Q"
+          className="text-white text-xs md:text-[20px]"
+        >
+          Download Resume
+        </a>
+
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
