@@ -18,16 +18,27 @@ const Hero = () => {
 
         <div className=" flex-none md:flex">
           <div>
-            <h1 className={`md:${styles.heroHeadText} text-2xl text-white`}>
-              Hi, I'm <span className="text-[#915EFF]">Mahmudul</span>
+            <h1 className={`md:${styles.heroHeadText} text-[22px] text-white`}>
+              Hi, I'm{" "}
+              <span className="text-[#915EFF] font-semibold font-serif">
+                Mahmudul
+              </span>
             </h1>
             <p
-              className={`md:${styles.heroSubText} text-base mt-2 text-white-100`}
+              className={`md:${styles.heroSubText} text-base mt-2 text-white-100 md:flex`}
             >
-              Full Stack developer | UI/UX | Web apps
+              <h1>
+                Full Stack developer <span className="hidden md:inline">|</span>
+                &nbsp;
+              </h1>
+              <h1>
+                {" "}
+                UI/UX <span className="hidden md:inline">|</span>&nbsp;
+              </h1>
+              <h1> Web apps</h1>
             </p>
           </div>
-          <img className="max-w-xs md:max-w-xl" src={profilePicture} />
+          <img className="max-w-[250px] md:max-w-xl" src={profilePicture} />
         </div>
       </div>
 

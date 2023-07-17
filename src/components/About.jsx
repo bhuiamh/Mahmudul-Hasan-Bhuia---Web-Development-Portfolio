@@ -42,11 +42,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] "
       >
-        Hello there, I'm Mahmudul Hassan .I'm a skilled full-stack web developer
-        with expertise in HTML, CSS, JavaScript, MongoDB and frameworks like
-        React, Node.js and Tailwind. I excel at collaborating closely with
-        clients to create efficient, scalable, and user-friendly solutions that
-        solve real-world problems. Let's bring your ideas to life together!
+        Hello there, I am Mahmudul Hassan Bhuia a skilled full-stack web
+        developer with expertise in HTML, CSS, JavaScript, MongoDB and
+        frameworks like React, Node.js and Tailwind. I excel at collaborating
+        closely with clients to create efficient, scalable, and user-friendly
+        solutions that solve real-world problems. Let's bring your ideas to life
+        together!
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
