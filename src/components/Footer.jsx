@@ -46,10 +46,7 @@ const Footer = () => {
               >
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
-              <a
-                href="www.linkedin.com/in/mahmudul-hasan-bhuia-771317280"
-                className="me-3 text-light"
-              >
+              <a href="www.linkedin.com/in/bhuiamh" className="me-3 text-light">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
               <a href="https://t.me/bhuiamh" className="me-3 text-light">
