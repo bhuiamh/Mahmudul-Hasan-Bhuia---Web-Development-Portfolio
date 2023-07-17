@@ -18,12 +18,20 @@ const Hero = () => {
 
         <div className=" flex-none md:flex">
           <div>
-            <h1 className={`md:${styles.heroHeadText} text-[22px] text-white`}>
-              Hi, I'm{" "}
-              <span className="text-[#915EFF] font-semibold font-serif">
-                Mahmudul
-              </span>
-            </h1>
+            <div className="md:flex">
+              <h1
+                className={`md:${styles.heroHeadText} text-[22px] text-white`}
+              >
+                Hi, I'm
+              </h1>
+              <p
+                className={`md:${styles.heroHeadText} text-[22px] md:ml-2 font-semibold font-serif`}
+              >
+                <span className="text-[#915EFF] font-semibold font-serif">
+                  Mahmudul
+                </span>
+              </p>
+            </div>
             <p
               className={`md:${styles.heroSubText} text-base mt-2 text-white-100 md:flex`}
             >
