@@ -23,12 +23,19 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
+import htmlcss from "./company/htmlcss.png";
+import js from "./company/js.png";
+import react from "./company/react.png";
 import tesla from "./company/tesla.png";
+import firebase from "./company/firebase.png";
+import mongo from "./company/mongo.png";
+import node from "./company/node.png";
+import express from "./company/express.png";
+import tbootstrap from "./company/tbootstrap.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import toylab from "./toylab.jpg";
+import tuneTutore from "./tuneTutors.jpg";
+import kitchen from "./kitchen.jpg";
 
 export {
   logo,
@@ -54,9 +61,15 @@ export {
   threejs,
   meta,
   shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  htmlcss,
+  js,
+  react,
+  firebase,
+  mongo,
+  node,
+  express,
+  tbootstrap,
+  toylab,
+  tuneTutore,
+  kitchen,
 };

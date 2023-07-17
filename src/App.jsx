@@ -1,4 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import {
   About,
   Contact,
@@ -10,6 +12,7 @@ import {
   Navbar,
   Tech,
 } from "./components";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <BrowserRouter>
@@ -25,8 +28,9 @@ const App = () => {
         <Feedbacks></Feedbacks>
         <div className="relative z-0">
           <Contact></Contact>
-          <StarsCanvas></StarsCanvas>
+          {/* <StarsCanvas></StarsCanvas> */}
         </div>
+        <Footer></Footer>
       </div>
     </BrowserRouter>
   );
