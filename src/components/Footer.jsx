@@ -20,13 +20,13 @@ const Footer = () => {
               href="mailto:info@kitchensecret.com"
               className="text-base text-light mb-2"
             >
-              bhuiamh@gmail.com
+              <i class="fa-solid fa-envelope"></i> bhuiamh@gmail.com
             </a>
             <a href="tel:+1-123-456-7890" className="text-base text-light mb-2">
-              +880-1946280853
+              <i class="fa-solid fa-phone"></i> +880-1946280853
             </a>
             <a href="tel:+1-123-456-7890" className="text-base text-light">
-              +880-1819831933
+              <i class="fa-solid fa-phone"></i> +880-1819831933
             </a>
           </div>
         </div>
