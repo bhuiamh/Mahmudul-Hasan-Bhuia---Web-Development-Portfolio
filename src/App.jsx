@@ -12,6 +12,7 @@ import {
   Tech,
 } from "./components";
 import Footer from "./components/Footer";
+import SocialLinks from "./components/SocialLinks";
 const App = () => {
   return (
     <BrowserRouter>
@@ -30,6 +31,7 @@ const App = () => {
         </div>
         <Footer></Footer>
       </div>
+      <SocialLinks />
     </BrowserRouter>
   );
 };

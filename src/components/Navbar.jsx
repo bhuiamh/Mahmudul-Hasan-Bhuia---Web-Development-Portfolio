@@ -51,9 +51,9 @@ const Navbar = () => {
 
         <a
           href="https://drive.google.com/uc?export=download&id=17WqOY0tQL7CQb-oFc_tr_18T7_6ks81Q"
-          className="text-white text-xs md:text-[20px]"
+          className="text-white text-[20px]"
         >
-          Download Resume
+          Resume <i class="fa-solid fa-download text-[20px]" />
         </a>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">

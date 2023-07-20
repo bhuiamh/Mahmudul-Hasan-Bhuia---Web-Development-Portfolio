@@ -37,47 +37,82 @@ const Footer = () => {
               <img src={namePhoto} alt="" />
             </div>
             <div className="flex justify-">
-              <a href="https://twitter.com" className="me-3 text-light">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                className="me-3 text-light"
+              >
                 <i class="fa-brands fa-twitter"></i>
               </a>
               <a
                 href="https://chat.whatsapp.com/Dby2PD9sOb9IzvFN6Zyvsq"
+                target="_blank"
                 className="me-3 text-light"
               >
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
-              <a href="www.linkedin.com/in/bhuiamh" className="me-3 text-light">
+              <a
+                href="https://www.linkedin.com/in/bhuiamh/"
+                target="_blank"
+                className="me-3 text-light"
+              >
                 <i class="fa-brands fa-linkedin"></i>
               </a>
-              <a href="https://t.me/bhuiamh" className="me-3 text-light">
+              <a
+                href="https://t.me/bhuiamh"
+                target="_blank"
+                className="me-3 text-light"
+              >
                 <i class="fa-brands fa-telegram"></i>
               </a>
               <a
                 href="https://www.facebook.com/bhuiamh/"
+                target="_blank"
                 className="me-3 text-light"
               >
                 <i class="fa-brands fa-facebook"></i>
               </a>
               <a
                 href="https://youtube.com/electricalghost"
+                target="_blank"
                 className="me-3 text-light"
               >
                 <i class="fa-brands fa-youtube"></i>
               </a>
-              <a href="https://instagram.com" className="me-3 text-light">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                className="me-3 text-light"
+              >
                 <i class="fa-brands fa-instagram"></i>
               </a>
 
-              <a href="https://pinterest.com" className="me-3 text-light">
+              <a
+                href="https://pinterest.com"
+                target="_blank"
+                className="me-3 text-light"
+              >
                 <i class="fa-brands fa-pinterest"></i>
               </a>
-              <a href="https://snapchat.com" className="me-3 text-light">
+              <a
+                href="https://snapchat.com"
+                target="_blank"
+                className="me-3 text-light"
+              >
                 <i class="fa-brands fa-square-snapchat"></i>
               </a>
-              <a href="https://reddit.com" className="me-3 text-light">
+              <a
+                href="https://reddit.com"
+                target="_blank"
+                className="me-3 text-light"
+              >
                 <i class="fa-brands fa-reddit"></i>
               </a>
-              <a href="https://tiktok.com" className="text-light">
+              <a
+                href="https://tiktok.com"
+                target="_blank"
+                className="text-light"
+              >
                 <i class="fa-brands fa-tiktok"></i>
               </a>
             </div>
