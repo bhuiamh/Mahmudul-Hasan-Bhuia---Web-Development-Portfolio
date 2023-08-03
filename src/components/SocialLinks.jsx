@@ -28,7 +28,7 @@ const SocialLinks = () => {
           Email <i class="fa-regular fa-envelope text-xl"></i>
         </>
       ),
-      href: "mailto:your.bhuiamh@gmail.com",
+      href: "mailto:your.mahmudul.bhuia@gmail.com",
     },
     {
       id: 4,
