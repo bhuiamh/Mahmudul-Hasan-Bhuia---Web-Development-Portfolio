@@ -50,7 +50,7 @@ const Navbar = () => {
         </Link>
 
         <a
-          href="https://drive.google.com/uc?export=download&id=17WqOY0tQL7CQb-oFc_tr_18T7_6ks81Q"
+          href="https://drive.google.com/uc?export=download&id=1YNPk_lYvdxffYdyMU_LMopt2Upq5i2iX"
           className="text-white text-[20px]"
         >
           Resume <i class="fa-solid fa-download text-[20px]" />

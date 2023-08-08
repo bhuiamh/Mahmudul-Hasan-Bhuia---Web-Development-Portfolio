@@ -23,11 +23,12 @@ const Footer = () => {
             >
               <i class="fa-solid fa-envelope"></i> mahmudul.bhuia@gmail.com
             </a>
-            <a href="tel:+1-123-456-7890" className="text-base text-light mb-2">
-              <i class="fa-solid fa-phone"></i> +880-1946280853
-            </a>
+
             <a href="tel:+1-123-456-7890" className="text-base text-light">
               <i class="fa-solid fa-phone"></i> +880-1819831933
+            </a>
+            <a href="tel:+1-123-456-7890" className="text-base text-light mb-2">
+              <i class="fa-solid fa-phone"></i> +880-1946280853
             </a>
           </div>
         </div>
