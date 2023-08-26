@@ -9,7 +9,7 @@ const SocialLinks = () => {
           LinkedIn <i class="fa-brands fa-linkedin text-xl"></i>
         </>
       ),
-      href: "https://www.linkedin.com/in/bhuiamh/",
+      href: "https://www.linkedin.com/in/mahmudulbhuia/",
       style: "rounded-tr-md",
     },
     {

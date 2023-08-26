@@ -53,7 +53,7 @@ const Footer = () => {
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/bhuiamh/"
+                href="https://www.linkedin.com/in/mahmudulbhuia/"
                 target="_blank"
                 className="me-3 text-light"
               >
@@ -81,7 +81,7 @@ const Footer = () => {
                 <i class="fa-brands fa-youtube"></i>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/bhuiamh/"
                 target="_blank"
                 className="me-3 text-light"
               >
@@ -89,7 +89,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://pinterest.com"
+                href="https://www.pinterest.com/bhuiamh/"
                 target="_blank"
                 className="me-3 text-light"
               >

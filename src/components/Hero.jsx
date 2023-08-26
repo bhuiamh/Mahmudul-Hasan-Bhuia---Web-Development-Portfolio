@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div className=" flex-none md:flex">
+        <div className="flex-none md:flex">
           <div>
             <div className="md:flex">
               <h1
@@ -40,12 +40,20 @@ const Hero = () => {
                 &nbsp;
               </h1>
               <h1>
-                {" "}
                 UI/UX <span className="hidden md:inline">|</span>&nbsp;
               </h1>
               <h1> Web apps</h1>
             </p>
+            <div className="mt-6 md:mt-12 md:ms-12">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1YNPk_lYvdxffYdyMU_LMopt2Upq5i2iX"
+                className="text-base md:text-3xl rounded-2xl hover:bg-black border-white border-2 hover:border-b-8 border-2xl  p-3"
+              >
+                Download Resume
+              </a>
+            </div>
           </div>
+
           <img className="max-w-[250px] md:max-w-xl" src={profilePicture} />
         </div>
       </div>
