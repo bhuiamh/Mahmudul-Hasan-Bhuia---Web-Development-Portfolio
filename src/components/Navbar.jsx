@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import Swal from "sweetalert2";
 import { styles } from "../style";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -24,6 +24,30 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const downloadResume = () => {
+    let timerInterval;
+    Swal.fire({
+      title: "Downloading...",
+      html: `
+      <div>
+        <h1 class="text-green-500">Download will start in <b></b> milliseconds.</h1>
+      </div>
+    `,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading();
+        const b = Swal.getHtmlContainer().querySelector("b");
+        timerInterval = setInterval(() => {
+          b.textContent = Swal.getTimerLeft();
+        }, 100);
+      },
+      willClose: () => {
+        clearInterval(timerInterval);
+      },
+    });
+  };
 
   return (
     <nav
@@ -50,13 +74,14 @@ const Navbar = () => {
         </Link>
 
         <a
+          onClick={downloadResume}
           href="https://drive.google.com/uc?export=download&id=1YNPk_lYvdxffYdyMU_LMopt2Upq5i2iX"
-          className="text-white text-[20px]"
+          className="text-white text-[20px] lg:ml ml-5"
         >
-          Resume <i class="fa-solid fa-download text-[20px]" />
+          Resume <i class="fa-solid fa-download text-yellow-500 text-[20px]" />
         </a>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden lg:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -70,7 +95,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="lg:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"

@@ -2,10 +2,34 @@ import { motion } from "framer-motion";
 
 import { styles } from "../style";
 import "./Hero.css";
-
-// import { ComputersCanvas } from "./canvas";
+import Swal from "sweetalert2";
 import profilePicture from "/desktop_pc/profile.png";
+
 const Hero = () => {
+  const downloadResume = () => {
+    let timerInterval;
+    Swal.fire({
+      title: "Downloading...",
+      html: `
+      <div>
+        <h1 class="text-green-500">Download will start in <b></b> milliseconds.</h1>
+      </div>
+    `,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading();
+        const b = Swal.getHtmlContainer().querySelector("b");
+        timerInterval = setInterval(() => {
+          b.textContent = Swal.getTimerLeft();
+        }, 100);
+      },
+      willClose: () => {
+        clearInterval(timerInterval);
+      },
+    });
+  };
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -16,7 +40,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div className="flex-none md:flex">
+        <div className="flex-none lg:flex">
           <div>
             <div className="md:flex">
               <h1
@@ -46,15 +70,19 @@ const Hero = () => {
             </p>
             <div className="mt-6 md:mt-12 md:ms-12">
               <a
+                onClick={downloadResume}
                 href="https://drive.google.com/uc?export=download&id=1YNPk_lYvdxffYdyMU_LMopt2Upq5i2iX"
-                className="text-base md:text-3xl rounded-2xl hover:bg-black border-white border-2 hover:border-b-8 border-2xl  p-3"
+                className="text-base md:text-3xl rounded-2xl hover:text-yellow-500 hover:bg-black border-white border-2 hover:border-b-8 border-2xl  p-3"
               >
                 Download Resume
               </a>
             </div>
           </div>
 
-          <img className="max-w-[250px] md:max-w-xl" src={profilePicture} />
+          <img
+            className="max-w-[250px] md:max-w-[300px] lg:max-w-[576px]"
+            src={profilePicture}
+          />
         </div>
       </div>
 
