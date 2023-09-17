@@ -53,7 +53,7 @@ const Footer = () => {
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/mahmudulbhuia/"
+                href="https://www.linkedin.com/in/bhuiamh/"
                 target="_blank"
                 className="me-3 text-light"
               >
