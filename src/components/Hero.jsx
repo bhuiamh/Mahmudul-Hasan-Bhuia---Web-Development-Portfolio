@@ -71,7 +71,7 @@ const Hero = () => {
             <div className="mt-6 md:mt-12 md:ms-12">
               <a
                 onClick={downloadResume}
-                href="https://drive.google.com/uc?export=download&id=1YNPk_lYvdxffYdyMU_LMopt2Upq5i2iX"
+                href="https://drive.google.com/uc?export=download&id=1NM4CUJxM2dcJTUmRrOpTZiaUq9G0_tJg"
                 className="text-base md:text-3xl rounded-2xl hover:text-yellow-500 hover:bg-black border-white border-2 hover:border-b-8 border-2xl  p-3"
               >
                 Download Resume

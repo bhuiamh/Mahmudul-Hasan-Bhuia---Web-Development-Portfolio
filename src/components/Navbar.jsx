@@ -75,7 +75,7 @@ const Navbar = () => {
 
         <a
           onClick={downloadResume}
-          href="https://drive.google.com/uc?export=download&id=1YNPk_lYvdxffYdyMU_LMopt2Upq5i2iX"
+          href="https://drive.google.com/uc?export=download&id=1NM4CUJxM2dcJTUmRrOpTZiaUq9G0_tJg"
           className="text-white text-[20px] lg:ml ml-5"
         >
           Resume <i class="fa-solid fa-download text-yellow-500 text-[20px]" />
