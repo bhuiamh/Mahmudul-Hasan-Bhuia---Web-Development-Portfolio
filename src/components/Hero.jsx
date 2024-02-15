@@ -4,6 +4,14 @@ import { styles } from "../style";
 import "./Hero.css";
 import Swal from "sweetalert2";
 import profilePicture from "/desktop_pc/profile.png";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const downloadResume = () => {
@@ -31,7 +39,7 @@ const Hero = () => {
   };
 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto mb-12`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -60,34 +68,97 @@ const Hero = () => {
               className={`md:${styles.heroSubText} text-base mt-2 text-white-100 md:flex`}
             >
               <h1>
-                Full Stack developer <span className="hidden md:inline">|</span>
-                &nbsp;
+                Frontend Developer at{" "}
+                <span className="uppercase text-blue-400">Digitosys IT</span>{" "}
               </h1>
-              <h1>
-                UI/UX <span className="hidden md:inline">|</span>&nbsp;
-              </h1>
-              <h1> Web apps</h1>
             </p>
             <div className="mt-6 md:mt-12 md:ms-12">
               <a
                 onClick={downloadResume}
                 href="https://drive.google.com/uc?export=download&id=1NM4CUJxM2dcJTUmRrOpTZiaUq9G0_tJg"
-                className="text-base md:text-3xl rounded-2xl hover:text-yellow-500 hover:bg-black border-white border-2 hover:border-b-8 border-2xl  p-3"
+                className="text-base md:text-3xl rounded-2xl hover:text-yellow-500 hover:bg-black border-white border-2 hover:border-b-8 border-2xl p-3"
               >
                 Download Resume
               </a>
             </div>
           </div>
 
-          <img
-            className="max-w-[250px] md:max-w-[300px] lg:max-w-[576px]"
-            src={profilePicture}
-          />
+          <div className="group">
+            <div className=" group-hover:translate-y-2 duration-300">
+              {" "}
+              {/* Added relative positioning */}
+              <img
+                className="w-[200px] md:w-[250px] lg:w-[300px]"
+                src={profilePicture}
+                alt="Profile Picture"
+              />
+            </div>
+            <div className="mb-6 w-[200px] md:w-[250px] lg:w-[300px] h-8 md:h-12 bg-gradient-to-r from-[#915EFF] to-[#6427e7] rounded-b-[100px] border-t-4 md:border-t-8 border-white  flex items-center justify-center">
+              <div className="flex items-center justify-center gap-3 my-auto">
+                <div className="h-4 w-4 md:h-6 md:w-6 rounded-full bg-[#050816] flex items-center justify-center hover:scale-110 duration-300">
+                  <button>
+                    <a
+                      href="https://www.linkedin.com/in/bhuiamh/"
+                      className="flex justify-between items-center w-full text-white"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaLinkedinIn className="text-[12px] md:text-base" />
+                    </a>
+                  </button>
+                </div>
+                <div className="h-4 w-4 md:h-6 md:w-6 rounded-full bg-[#050816] flex items-center justify-center hover:scale-110 duration-300">
+                  <button>
+                    <a
+                      href="https://t.me/bhuiamh"
+                      className="flex justify-between items-center w-full text-white"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaTwitter className="text-[12px] md:text-base" />
+                    </a>
+                  </button>
+                </div>
+                <div className="h-4 w-4 md:h-6 md:w-6 rounded-full bg-[#050816] flex items-center justify-center hover:scale-110 duration-300">
+                  <button>
+                    <a
+                      href="https://www.instagram.com/bhuiamh/"
+                      className="flex justify-between items-center w-full text-white"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaInstagram className="text-[12px] md:text-base" />
+                    </a>
+                  </button>
+                </div>
+                <div className="h-4 w-4 md:h-6 md:w-6 rounded-full bg-[#050816] flex items-center justify-center hover:scale-110 duration-300">
+                  <button>
+                    <a
+                      href="https://www.facebook.com/bhuiamh/"
+                      className="flex justify-between items-center w-full text-white"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaFacebook className="text-[12px] md:text-base" />
+                    </a>
+                  </button>
+                </div>
+                <div className="h-4 w-4 md:h-6 md:w-6 rounded-full bg-[#050816] flex items-center justify-center hover:scale-110 duration-300">
+                  <button>
+                    <a
+                      href="https://chat.whatsapp.com/Dby2PD9sOb9IzvFN6Zyvsq"
+                      className="flex justify-between items-center w-full text-white"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaWhatsapp className="text-[12px] md:text-base" />
+                    </a>
+                  </button>
+                </div>
+              </div>{" "}
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div>
-        <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center"></div>
       </div>
     </section>
   );
